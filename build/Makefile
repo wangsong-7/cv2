@@ -141,6 +141,19 @@ task2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task2.dir\build.make CMakeFiles/task2.dir/build
 .PHONY : task2/fast
 
+#=============================================================================
+# Target rules for targets named image_preprocess
+
+# Build rule for target.
+image_preprocess: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 image_preprocess
+.PHONY : image_preprocess
+
+# fast build rule for target.
+image_preprocess/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\image_preprocess.dir\build.make CMakeFiles/image_preprocess.dir/build
+.PHONY : image_preprocess/fast
+
 Measurement_Task/task1.obj: Measurement_Task/task1.cpp.obj
 .PHONY : Measurement_Task/task1.obj
 
@@ -189,6 +202,30 @@ Measurement_Task/task2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task2.dir\build.make CMakeFiles/task2.dir/Measurement_Task/task2.cpp.s
 .PHONY : Measurement_Task/task2.cpp.s
 
+day1/image_preprocess.obj: day1/image_preprocess.cpp.obj
+.PHONY : day1/image_preprocess.obj
+
+# target to build an object file
+day1/image_preprocess.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\image_preprocess.dir\build.make CMakeFiles/image_preprocess.dir/day1/image_preprocess.cpp.obj
+.PHONY : day1/image_preprocess.cpp.obj
+
+day1/image_preprocess.i: day1/image_preprocess.cpp.i
+.PHONY : day1/image_preprocess.i
+
+# target to preprocess a source file
+day1/image_preprocess.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\image_preprocess.dir\build.make CMakeFiles/image_preprocess.dir/day1/image_preprocess.cpp.i
+.PHONY : day1/image_preprocess.cpp.i
+
+day1/image_preprocess.s: day1/image_preprocess.cpp.s
+.PHONY : day1/image_preprocess.s
+
+# target to generate assembly for a file
+day1/image_preprocess.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\image_preprocess.dir\build.make CMakeFiles/image_preprocess.dir/day1/image_preprocess.cpp.s
+.PHONY : day1/image_preprocess.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -197,6 +234,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... image_preprocess
 	@echo ... task1
 	@echo ... task2
 	@echo ... Measurement_Task/task1.obj
@@ -205,6 +243,9 @@ help:
 	@echo ... Measurement_Task/task2.obj
 	@echo ... Measurement_Task/task2.i
 	@echo ... Measurement_Task/task2.s
+	@echo ... day1/image_preprocess.obj
+	@echo ... day1/image_preprocess.i
+	@echo ... day1/image_preprocess.s
 .PHONY : help
 
 

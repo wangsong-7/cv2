@@ -1,1 +1,18 @@
- 
+ # 编译产物，不需要提交
+build/
+*.exe
+*.o
+
+# 系统文件
+.DS_Store
+
+# VSCode 配置（可选，看个人习惯）
+.vscode/
+*.jpg
+*.png
+
+# CMake 生成文件
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile

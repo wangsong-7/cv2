@@ -157,7 +157,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=CV2
+CMAKE_PROJECT_NAME:STATIC=image_preprocess
 
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
@@ -256,6 +256,15 @@ CV2_SOURCE_DIR:STATIC=D:/cv2
 
 //No help, variable specified on the command line.
 OpenCV_DIR:UNINITIALIZED=D:/opencv/build/x64/mingw
+
+//Value Computed by CMake
+image_preprocess_BINARY_DIR:STATIC=D:/cv2/build
+
+//Value Computed by CMake
+image_preprocess_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+image_preprocess_SOURCE_DIR:STATIC=D:/cv2
 
 
 ########################

@@ -65,4 +65,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/task1.dir/DependInfo.cmake"
   "CMakeFiles/task2.dir/DependInfo.cmake"
+  "CMakeFiles/image_preprocess.dir/DependInfo.cmake"
   )

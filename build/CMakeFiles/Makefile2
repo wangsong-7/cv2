@@ -64,11 +64,13 @@ CMAKE_BINARY_DIR = D:\cv2\build
 # The main recursive "all" target.
 all: CMakeFiles/task1.dir/all
 all: CMakeFiles/task2.dir/all
+all: CMakeFiles/image_preprocess.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/task1.dir/codegen
 codegen: CMakeFiles/task2.dir/codegen
+codegen: CMakeFiles/image_preprocess.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -78,6 +80,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/task1.dir/clean
 clean: CMakeFiles/task2.dir/clean
+clean: CMakeFiles/image_preprocess.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -87,7 +90,7 @@ clean: CMakeFiles/task2.dir/clean
 CMakeFiles/task1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task1.dir\build.make CMakeFiles/task1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task1.dir\build.make CMakeFiles/task1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\cv2\build\CMakeFiles --progress-num=1,2 "Built target task1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\cv2\build\CMakeFiles --progress-num=3,4 "Built target task1"
 .PHONY : CMakeFiles/task1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -104,7 +107,7 @@ task1: CMakeFiles/task1.dir/rule
 # codegen rule for target.
 CMakeFiles/task1.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task1.dir\build.make CMakeFiles/task1.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\cv2\build\CMakeFiles --progress-num=1,2 "Finished codegen for target task1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\cv2\build\CMakeFiles --progress-num=3,4 "Finished codegen for target task1"
 .PHONY : CMakeFiles/task1.dir/codegen
 
 # clean rule for target.
@@ -119,7 +122,7 @@ CMakeFiles/task1.dir/clean:
 CMakeFiles/task2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task2.dir\build.make CMakeFiles/task2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task2.dir\build.make CMakeFiles/task2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\cv2\build\CMakeFiles --progress-num=3,4 "Built target task2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\cv2\build\CMakeFiles --progress-num=5,6 "Built target task2"
 .PHONY : CMakeFiles/task2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -136,13 +139,45 @@ task2: CMakeFiles/task2.dir/rule
 # codegen rule for target.
 CMakeFiles/task2.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task2.dir\build.make CMakeFiles/task2.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\cv2\build\CMakeFiles --progress-num=3,4 "Finished codegen for target task2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\cv2\build\CMakeFiles --progress-num=5,6 "Finished codegen for target task2"
 .PHONY : CMakeFiles/task2.dir/codegen
 
 # clean rule for target.
 CMakeFiles/task2.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task2.dir\build.make CMakeFiles/task2.dir/clean
 .PHONY : CMakeFiles/task2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/image_preprocess.dir
+
+# All Build rule for target.
+CMakeFiles/image_preprocess.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\image_preprocess.dir\build.make CMakeFiles/image_preprocess.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\image_preprocess.dir\build.make CMakeFiles/image_preprocess.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\cv2\build\CMakeFiles --progress-num=1,2 "Built target image_preprocess"
+.PHONY : CMakeFiles/image_preprocess.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/image_preprocess.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\cv2\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/image_preprocess.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\cv2\build\CMakeFiles 0
+.PHONY : CMakeFiles/image_preprocess.dir/rule
+
+# Convenience name for target.
+image_preprocess: CMakeFiles/image_preprocess.dir/rule
+.PHONY : image_preprocess
+
+# codegen rule for target.
+CMakeFiles/image_preprocess.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\image_preprocess.dir\build.make CMakeFiles/image_preprocess.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\cv2\build\CMakeFiles --progress-num=1,2 "Finished codegen for target image_preprocess"
+.PHONY : CMakeFiles/image_preprocess.dir/codegen
+
+# clean rule for target.
+CMakeFiles/image_preprocess.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\image_preprocess.dir\build.make CMakeFiles/image_preprocess.dir/clean
+.PHONY : CMakeFiles/image_preprocess.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
