@@ -16,7 +16,7 @@ int main() {
     // 注意：Size(w, h) 指的是内角点的数量，比如 10x7 的格子，内角点是 9x6
     Size boardSize(11, 7); 
     string inputFolder = "D:/photo test/*.png"; // 存放图片的文件夹路径
-    string outputFolder = "D:/photo test/";    // 输出结果的路径
+    string outputFolder ="D:/photo test/output/";    // 输出结果的路径
 
     // 2. 批量读取图片 (使用 cv::glob 遍历文件夹)
     vector<String> imageFiles;

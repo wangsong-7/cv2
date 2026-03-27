@@ -1,17 +1,4 @@
-/**
 
- *  功能菜单：
- *   0. 灰度化          (Grayscale)
- *   1. 高斯滤波        (Gaussian Blur)
- *   2. 中值滤波        (Median Blur)
- *   3. 二值化          (Threshold)
- *   4. Canny 边缘检测  (Canny)
- *   5. 形态学操作      (Morphology)
- *   6. 轮廓提取        (Contour)
- *   7. 全流水线        (Full Pipeline)
- *   q. 退出
- * ============================================================
- */
 
 #include <opencv2/opencv.hpp>
 #include <iostream>

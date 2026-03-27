@@ -10,7 +10,7 @@ build/
 .vscode/
 *.jpg
 *.png
-
+build/
 # CMake 生成文件
 CMakeCache.txt
 CMakeFiles/
