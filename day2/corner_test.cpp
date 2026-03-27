@@ -19,7 +19,7 @@ int main() {
     string outputFolder ="D:/photo test/output/";    // 输出结果的路径
 
     // 2. 批量读取图片 (使用 cv::glob 遍历文件夹)
-    vector<String> imageFiles;
+    vector<String> imageFiles ;
     glob(inputFolder, imageFiles, false);
 
     if (imageFiles.empty()) {
