@@ -61,7 +61,7 @@ Mat processGaussianBlur(const Mat& src, int ksize = 5, double sigma = 0)
 {
     // ksize 必须是奇数
     if (ksize % 2 == 0) ksize += 1;
-    Mat blurred;
+    Mat blurred 
     GaussianBlur(src, blurred, Size(ksize, ksize), sigma);
     return blurred;
 }
